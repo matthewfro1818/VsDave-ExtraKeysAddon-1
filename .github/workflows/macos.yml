@@ -42,7 +42,7 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
-          name: macBuild
+          name: macBuild-Release
           path: export/release/macos/bin
   DebugBuild:
     runs-on: macos-12
@@ -70,5 +70,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
-          name: macBuild
+          name: macBuild-Debug
           path: export/debug/macos/bin
