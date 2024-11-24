@@ -1,8 +1,12 @@
-@echo off
-title Setup - PECG
+#!/bin/sh
+# SETUP FOR MAC AND LINUX SYSTEMS!!!
+# REMINDER THAT YOU NEED HAXE INSTALLED PRIOR TO USING THIS
+# https://haxe.org/download
 cd ..
-
-echo Installing dependencies, please wait...
+echo Makking the main haxelib and setuping folder in same time..
+mkdir ~/haxelib && haxelib setup ~/haxelib
+echo Installing dependencies...
+echo This might take a few moments depending on your internet speed.
 haxelib install lime 8.1.2
 haxelib install openfl 9.3.3
 haxelib install flixel 4.11.0
@@ -19,4 +23,4 @@ haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
 haxelib git faxe https://github.com/uhrobots/faxe
 haxelib git polymod https://github.com/larsiusprime/polymod.git
 haxelib install hxcpp-debug-server
-haxelib list
+echo Finished!
