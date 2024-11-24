@@ -43,7 +43,7 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
-          name: windowsBuild
+          name: windowsBuild-Release
           path: export/release/windows/bin
   DebugBuild:
     runs-on: windows-latest
@@ -72,5 +72,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
-          name: windowsBuild
+          name: windowsBuild-Debug
           path: export/release/debug/bin
